@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>blog__________________</h2>
+    <h2>teppysBlog</h2>
     <Nuxt />
   </div>
 </template>
