@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div style="margin: 60px">
+    <div style="margin: 90px">
       <b-navbar toggleable="lg" type="dark" variant="info" fixed="top">
-        <b-navbar-brand href="#">NavBar</b-navbar-brand>
+        <b-navbar-brand href="#">Blog</b-navbar-brand>
 
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
