@@ -23,7 +23,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "microcms-nuxt-jamstack-blog",
+    title: "teppy-blog-jamstack",
     htmlAttrs: {
       lang: "ja",
     },
@@ -58,6 +58,9 @@ export default {
         "M+PLUS+Rounded+1c:700",
       ],
     },
+  },
+  bootstrapVue: {
+    icons: true,
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
