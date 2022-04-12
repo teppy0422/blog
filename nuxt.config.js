@@ -25,7 +25,7 @@ export default {
   head: {
     title: "microcms-nuxt-jamstack-blog",
     htmlAttrs: {
-      lang: "en",
+      lang: "ja",
     },
     meta: [
       { charset: "utf-8" },
@@ -49,8 +49,16 @@ export default {
   buildModules: [],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["bootstrap-vue/nuxt"],
-
+  modules: ["bootstrap-vue/nuxt", "nuxt-webfontloader"],
+  webfontloader: {
+    google: {
+      families: [
+        "Lato:400,700",
+        "Noto+Sans+JP:400,700",
+        "M+PLUS+Rounded+1c:700",
+      ],
+    },
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 };

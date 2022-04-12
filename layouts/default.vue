@@ -2,9 +2,13 @@
   <div>
     <div style="margin: 90px">
       <b-navbar toggleable="lg" type="light" variant="light" fixed="top">
-        <div 
-        <b-navbar-brand href="#">TeppeiKataoka</b-navbar-brand>
-
+        <b-navbar-brand href="#" class="themeFont">
+          <img
+            src="../assets/img/hippo_001_footprint.webp"
+            style="height: 14px; margin-right: -4px"
+          />
+          TeppeiKataoka</b-navbar-brand
+        >
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
         <b-collapse id="nav-collapse" is-nav>
@@ -49,3 +53,9 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+.themeFont {
+  font-family: "M PLUS Rounded 1c", "Noto Sans JP", sans-serif;
+}
+</style>
