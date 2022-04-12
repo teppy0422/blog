@@ -18,6 +18,7 @@ $ npm run dev
 $ npm run build
 $ npm run start
 
+# nuxt createで選択したら起動しない 後から入れたら動いた
 $ npm install bootstrap-vue
 
 # add in nuxt.config.js

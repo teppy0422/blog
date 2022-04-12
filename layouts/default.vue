@@ -12,9 +12,17 @@
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
         <b-collapse id="nav-collapse" is-nav>
-          <b-navbar-nav>
+          <b-navbar-nav style="vertical-align: middle">
             <b-nav-item href="#">Link</b-nav-item>
             <b-nav-item href="#" disabled>Disabled</b-nav-item>
+            <b-nav-item href="#"
+              ><b-icon
+                icon="github"
+                aria-hidden="true"
+                style="margin-right: 2px"
+              ></b-icon
+              >Source</b-nav-item
+            >
           </b-navbar-nav>
 
           <!-- Right aligned nav items -->
@@ -48,6 +56,7 @@
         </b-collapse>
       </b-navbar>
     </div>
+    <b-icon icon="info-circle" aria-hidden="true"></b-icon>
     <div>
       <Nuxt />
     </div>
