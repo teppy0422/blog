@@ -2,20 +2,20 @@
   <div>
     <div style="margin: 90px">
       <b-navbar toggleable="lg" type="light" variant="light" fixed="top">
-        <b-navbar-brand href="#" class="themeFont">
-          <img
-            src="../assets/img/hippo_001_footprint.webp"
-            style="height: 14px; margin-right: -4px"
-          />
-          TeppeiKataoka</b-navbar-brand
+        <b-navbar-brand to="/" class="themeFont">
+          <img src="~/assets/img/hippo_001_footprint.webp" />
+          TeppeiKataoka____________</b-navbar-brand
         >
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav style="vertical-align: middle">
-            <b-nav-item href="#">Link</b-nav-item>
-            <b-nav-item href="#" disabled>Disabled</b-nav-item>
-            <b-nav-item href="#"
+            <b-nav-item href="#" class="under">Link</b-nav-item>
+            <b-nav-item href="#" class="under">Disabled</b-nav-item>
+            <b-nav-item
+              href="https://github.com/teppy0422/blog"
+              target="_blank"
+              class="under"
               ><b-icon
                 icon="github"
                 aria-hidden="true"
@@ -56,15 +56,23 @@
         </b-collapse>
       </b-navbar>
     </div>
-    <b-icon icon="info-circle" aria-hidden="true"></b-icon>
     <div>
       <Nuxt />
     </div>
   </div>
 </template>
 
-<style scoped>
+<style lang="scss">
 .themeFont {
   font-family: "M PLUS Rounded 1c", "Noto Sans JP", sans-serif;
+  img {
+    height: 16px;
+    margin-right: -4px;
+  }
+}
+.under:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: black;
 }
 </style>

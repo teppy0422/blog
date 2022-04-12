@@ -1,0 +1,9 @@
+<template>
+  <div>
+    <p>ステータスコード：{{ error.statusCode }}</p>
+    <p>メッセージ：{{ error.message }}</p>
+  </div>
+</template>
+
+<script>
+</script>
