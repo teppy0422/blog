@@ -4,9 +4,8 @@
       <b-navbar toggleable="lg" type="light" variant="light" fixed="top">
         <b-navbar-brand to="/" class="themeFont">
           <img src="~/assets/img/hippo_001_footprint.webp" />
-          TeppeiKataoka____miho</b-navbar-brand
+          TeppeiKataoka____________</b-navbar-brand
         >
-
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
         <b-collapse id="nav-collapse" is-nav>
