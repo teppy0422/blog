@@ -4,14 +4,18 @@
       <b-navbar toggleable="lg" type="light" variant="light" fixed="top">
         <b-navbar-brand to="/" class="themeFont">
           <img src="~/assets/img/hippo_001_footprint.webp" />
-          TeppeiKataoka____________</b-navbar-brand
+          TeppeiKataoka_____</b-navbar-brand
         >
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav style="vertical-align: middle">
             <b-nav-item href="#" class="under">Link</b-nav-item>
-            <b-nav-item href="#" class="under">Disabled</b-nav-item>
+
+            <b-nav-item class="under">
+              <nuxt-link to="/about">About</nuxt-link>
+            </b-nav-item>
+
             <b-nav-item
               href="https://github.com/teppy0422/blog"
               target="_blank"
@@ -56,23 +60,30 @@
         </b-collapse>
       </b-navbar>
     </div>
-    <div>
+    <div class="container">
       <Nuxt />
     </div>
   </div>
 </template>
 
-<style lang="scss">
-.themeFont {
-  font-family: "M PLUS Rounded 1c", "Noto Sans JP", sans-serif;
-  img {
-    height: 16px;
-    margin-right: -4px;
+<style lang="scss" scoped>
+a {
+  color: (var(--light-black));
+  &:link {
+    color: blue;
+  }
+  &:visited {
+    color: (var(--light-black));
+  }
+  &:hover {
+    color: #000000;
   }
 }
-.under:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  color: black;
+.navbar-light {
+  color: #000000;
+}
+.nav-link {
+  color: red;
+  color: red;
 }
 </style>

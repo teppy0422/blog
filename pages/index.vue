@@ -1,11 +1,11 @@
 <template>
   <div>
-    <ul>
-      <li v-for="content in contents" :key="content.id">
+    <ul class="detail_list">
+      <ol v-for="content in contents" :key="content.id">
         <nuxt-link :to="`/${content.id}`">
           {{ content.title }}
         </nuxt-link>
-      </li>
+      </ol>
     </ul>
   </div>
 </template>
@@ -28,3 +28,5 @@ export default {
   },
 };
 </script>
+<style lang="scss" scoped>
+</style>

@@ -23,7 +23,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "teppy-blog-jamstack",
+    title: "teppy-blog",
     htmlAttrs: {
       lang: "ja",
     },
@@ -37,7 +37,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: [{ src: "@/assets/css/style.scss", lang: "scss" }],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
